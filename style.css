@@ -1,0 +1,61 @@
+.top-menu {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+   
+}
+
+.top-menu a:hover {
+    color: #ff5722;
+}
+
+.top-menu i {
+    font-size: 20px;
+    
+} 
+
+
+.login-fixed {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #333;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
