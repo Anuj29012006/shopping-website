@@ -1,61 +1,168 @@
-.top-menu {
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    background: #fff;
-    padding: 15px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
 }
 
-.top-menu a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
+/* ---------------- NAVBAR ------------------ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #d2e3ff;
+}
+
+.logo {
     display: flex;
     align-items: center;
-    gap: 8px;
-   
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
-.top-menu a:hover {
-    color: #ff5722;
+.logo-icon {
+    background: #e46a6a;
+    padding: 10px;
+    border-radius: 50%;
 }
 
-.top-menu i {
-    font-size: 20px;
-    
-} 
-
-
-.login-fixed {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
+.nav-links a {
+    margin: 0 12px;
+    text-decoration: none;
     color: #333;
+    font-weight: 500;
+}
+
+.nav-links .active {
+    color: #0a4eb3;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+/* ---------------- HERO SECTION ------------------ */
+.hero {
+    padding: 25px;
+    background: #e3edff;
+}
+
+.greet {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.search-bar {
+    margin-top: 20px;
+    background: white;
+    border-radius: 30px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    border: none;
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+}
+
+.filter-icon,
+.search-icon {
+    color: #666;
+}
+
+/* ---------------- CATEGORIES ------------------ */
+.categories {
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.categories button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    background: #e4e4e4;
     cursor: pointer;
 }
 
+.categories .active {
+    background: #ff6e6e;
+    color: white;
+}
 
+/* ---------------- POPULAR RECIPES ------------------ */
+.popular {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.subtext {
+    color: #666;
+}
 
+.recipe-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
 
+.recipe-card {
+    width: 250px;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
 
+.img-box {
+    height: 140px;
+    background: #d4d4d4;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
 
+.recipe-card button {
+    width: 100%;
+    background: #b6efaa;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
+/* ---------------- FOR YOU ------------------ */
+.for-you {
+    padding: 20px;
+}
 
+.for-you-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.rec-item {
+    min-width: 220px;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}

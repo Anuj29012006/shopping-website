@@ -1,30 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CookHub</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<link rel="stylesheet" href="/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 
 <body>
-   
-        <nav class="top-menu">
-            <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
-            <a href="#favorites"><i class="fa-solid fa-heart"></i> Favorites</a>
-            <a href="#shopping"><i class="fa-solid fa-cart-shopping"></i> Shopping List</a>  </nav> 
-        <i class="fa-solid fa-user login-fixed"></i>
-           
-        
-        
 
-          
-        
-        
+    <!-- Top Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <div class="logo-icon">👨‍🍳</div>
+            <span>CookHub</span>
+        </div>
 
-        
+        <nav class="nav-links">
+            <a class="active" href="#">Home</a>
+            <a href="#">Favorites</a>
+            <a href="#">Shopping List</a>
+
+        </nav>
+
+        <div class="nav-actions">
+            <span class="material-icons">notifications_none</span>
+
+            <div class="profile"><i class="fa-solid fa-user login-fixed"></i></div>
+
+        </div>
+    </header>
+
+    <!-- Greeting + Search -->
+    <section class="hero">
+        <p class="greet">Hi Fahmi 👋</p>
+        <p class="sub">What do you want to cook today?</p>
+
+        <div class="search-bar">
+            <span class="material-icons search-icon">search</span>
+            <input type="text" placeholder="Search Recipe for Cooking">
+            <span class="material-icons filter-icon">tune</span>
+        </div>
+    </section>
+
+    <!-- Category Tabs -->
+    <div class="categories">
+        <button class="active">All</button>
+        <button>Breakfast</button>
+        <button>Lunch</button>
+        <button>Dinner</button>
+        <button>Snacks</button>
+    </div>
+
+    <!-- Popular Recipes Section -->
+    <section class="popular">
+        <h2>Popular Recipes You Can't Miss</h2>
+        <p class="subtext">From comfort food classics to exotic flavors, our featured recipes are sure to impress.</p>
+
+        <div class="recipe-grid">
+
+            <!-- Card 1 -->
+            <div class="recipe-card">
+                <div class="img-box"></div>
+                <h3>Creamy Tomato Basil Soup</h3>
+                <p>This comforting soup is made with fresh tomatoes, aromatic basil, and...</p>
+                <button>See Full Details</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="recipe-card">
+                <div class="img-box"></div>
+                <h3>Spicy Shrimp Tacos</h3>
+                <p>These tacos are loaded with juicy shrimp that have been marinated...</p>
+                <button>See Full Details</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="recipe-card">
+                <div class="img-box"></div>
+                <h3>Chicken Parmesan</h3>
+                <p>This classic Italian dish features tender chicken breasts coated in...</p>
+                <button>See Full Details</button>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="recipe-card">
+                <div class="img-box"></div>
+                <h3>Chocolate Chip Cookies</h3>
+                <p>These cookies are the perfect balance of chewy and crispy, with...</p>
+                <button>See Full Details</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- For You Section -->
+    <section class="for-you">
+        <h3>For You</h3>
+        <div class="for-you-list">
+            <div class="rec-item">Red soup with lemon on the side</div>
+            <div class="rec-item">Grilled chicken with vegetables</div>
+            <div class="rec-item">Fresh summer salad bowl</div>
+        </div>
+    </section>
 
 </body>
+
 </html>
