@@ -294,6 +294,10 @@ header {
     color: #666;
 }
 
+h2 {
+    text-decoration: underline;
+}
+
 /* ---------- Popular Recipes Card ---------- */
 
 .popular-card-container {
@@ -480,9 +484,4 @@ path, svg, .fav-icon, .fav-bg {
 .click {
     height: 100px;
     background-color: red;
-}
-
-
-h2 {
-    text-decoration: underline;
 }
